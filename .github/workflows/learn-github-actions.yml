@@ -9,6 +9,6 @@ jobs:
       - name: Build base image
         uses: docker/build-push-action@v3
         with:
-          context: base
+          context: .
           push: true
           tags: devdocker.wifa.uni-leipzig.de:5000/benni/test-nest-docker-image:latest
